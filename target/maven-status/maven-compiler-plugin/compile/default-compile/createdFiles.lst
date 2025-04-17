@@ -1,0 +1,5 @@
+jiekie\command\ItemEditCommand.class
+jiekie\completer\ItemEditTabCompleter.class
+jiekie\util\ChatUtil.class
+jiekie\util\SoundUtil.class
+jiekie\ItemEditPlugin.class
