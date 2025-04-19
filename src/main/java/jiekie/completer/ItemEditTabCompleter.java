@@ -21,6 +21,8 @@ public class ItemEditTabCompleter implements TabCompleter {
     @Nullable
     @Override
     public List<String> onTabComplete(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
+        if(!sender.hasPermission("jk.item_edit.command")) return Collections.emptyList();
+
         if(args.length == 1)
             return Arrays.asList("이름", "설명", "설명제거", "도움말");
 
