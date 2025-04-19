@@ -9,3 +9,5 @@ commands:
     description: 아이템 설정 명령어
     usage: /아이템
     tab-completer: jiekie.completer.ItemEditTabCompleter
+    permission: jk.item_edit.command
+    permission-message: ''
