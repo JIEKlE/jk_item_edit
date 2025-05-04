@@ -75,7 +75,7 @@ public class ItemEditCommand implements CommandExecutor {
         }
 
         if(itemDoesNotExistInHand(player)) {
-            ChatUtil.noItem(player);
+            ChatUtil.showMessage(player, ChatUtil.NO_ITEM);
             return;
         }
 
@@ -86,7 +86,7 @@ public class ItemEditCommand implements CommandExecutor {
         meta.setDisplayName(itemName);
         item.setItemMeta(meta);
 
-        ChatUtil.itemNameIsChanged(player);
+        ChatUtil.showMessage(player, ChatUtil.ITEM_NAME_IS_CHANGED);
         SoundUtil.playNoteBlockBell(player);
     }
 
@@ -103,7 +103,7 @@ public class ItemEditCommand implements CommandExecutor {
     /* 설명 */
     private void addItemlore(Player player, String[] args) {
         if(itemDoesNotExistInHand(player)) {
-            ChatUtil.noItem(player);
+            ChatUtil.showMessage(player, ChatUtil.NO_ITEM);
             return;
         }
 
@@ -125,14 +125,14 @@ public class ItemEditCommand implements CommandExecutor {
         }
         item.setItemMeta(meta);
 
-        ChatUtil.itemLoreIsAdded(player);
+        ChatUtil.showMessage(player, ChatUtil.ITEM_LORE_IS_ADDED);
         SoundUtil.playNoteBlockBell(player);
     }
 
     /* 설명 제거 */
     private void removeItemLore(Player player) {
         if(itemDoesNotExistInHand(player)) {
-            ChatUtil.noItem(player);
+            ChatUtil.showMessage(player, ChatUtil.NO_ITEM);
             return;
         }
 
@@ -141,7 +141,7 @@ public class ItemEditCommand implements CommandExecutor {
         meta.setLore(null);
         item.setItemMeta(meta);
 
-        ChatUtil.itemLoreIsRemoved(player);
+        ChatUtil.showMessage(player, ChatUtil.ITEM_LORE_IS_REMOVED);
         SoundUtil.playNoteBlockBell(player);
     }
 

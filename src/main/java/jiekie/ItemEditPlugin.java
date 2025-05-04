@@ -12,7 +12,7 @@ public final class ItemEditPlugin extends JavaPlugin {
         getCommand("아이템").setExecutor(new ItemEditCommand(this));
 
         // 자동완성 등록
-        getCommand("아이템").setTabCompleter(new ItemEditTabCompleter(this));
+        getCommand("아이템").setTabCompleter(new ItemEditTabCompleter());
 
         getLogger().info("아이템 설정 플러그인 by Jiekie");
         getLogger().info("Copyright © 2025 Jiekie. All rights reserved.");

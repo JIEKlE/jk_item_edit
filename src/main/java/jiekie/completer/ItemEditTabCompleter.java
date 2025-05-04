@@ -1,6 +1,5 @@
 package jiekie.completer;
 
-import jiekie.ItemEditPlugin;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabCompleter;
@@ -12,12 +11,6 @@ import java.util.Collections;
 import java.util.List;
 
 public class ItemEditTabCompleter implements TabCompleter {
-    private final ItemEditPlugin plugin;
-
-    public ItemEditTabCompleter(ItemEditPlugin plugin) {
-        this.plugin = plugin;
-    }
-
     @Nullable
     @Override
     public List<String> onTabComplete(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
