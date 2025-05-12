@@ -1,7 +1,7 @@
-package jiekie;
+package jiekie.itemedit;
 
-import jiekie.command.ItemEditCommand;
-import jiekie.completer.ItemEditTabCompleter;
+import jiekie.itemedit.command.ItemEditCommand;
+import jiekie.itemedit.completer.ItemEditTabCompleter;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class ItemEditPlugin extends JavaPlugin {

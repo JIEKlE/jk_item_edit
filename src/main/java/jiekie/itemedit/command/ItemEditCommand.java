@@ -1,8 +1,8 @@
-package jiekie.command;
+package jiekie.itemedit.command;
 
-import jiekie.ItemEditPlugin;
-import jiekie.util.ChatUtil;
-import jiekie.util.SoundUtil;
+import jiekie.itemedit.ItemEditPlugin;
+import jiekie.itemedit.util.ChatUtil;
+import jiekie.itemedit.util.SoundUtil;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.command.Command;

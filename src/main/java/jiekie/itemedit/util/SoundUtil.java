@@ -1,4 +1,4 @@
-package jiekie.util;
+package jiekie.itemedit.util;
 
 import org.bukkit.SoundCategory;
 import org.bukkit.entity.Player;
